@@ -3,124 +3,168 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:paddingStart="16dp"
+    android:paddingEnd="16dp"
+    android:paddingTop="36dp"
     android:layout_height="match_parent"
     android:background="@drawable/colour_two"
     tools:context=".MainActivity">
 
-    <fragment
-        android:id="@+id/fragment"
-        android:name="com.android.example.projectsmile.QuestionFragment"
+    <ImageView
+        android:layout_width="12dp"
+        android:layout_height="12dp"
+        app:srcCompat="@drawable/circle"
+        app:layout_constraintStart_toEndOf="@id/fragment1"
+        app:layout_constraintEnd_toStartOf="@id/fragment2"
+        app:layout_constraintTop_toBottomOf="@id/fragment1"
+        app:layout_constraintBottom_toTopOf="@id/fragment4"/>
+    <ImageView
+        android:layout_width="12dp"
+        android:layout_height="12dp"
+        app:srcCompat="@drawable/circle"
+        app:layout_constraintStart_toEndOf="@id/fragment2"
+        app:layout_constraintEnd_toStartOf="@id/fragment3"
+        app:layout_constraintTop_toBottomOf="@id/fragment1"
+        app:layout_constraintBottom_toTopOf="@id/fragment4"/>
+    <ImageView
+        android:layout_width="12dp"
+        android:layout_height="12dp"
+        app:srcCompat="@drawable/circle"
+        app:layout_constraintStart_toEndOf="@id/fragment1"
+        app:layout_constraintEnd_toStartOf="@id/fragment2"
+        app:layout_constraintTop_toBottomOf="@id/fragment4"
+        app:layout_constraintBottom_toTopOf="@id/fragment7"/>
+    <ImageView
+        android:layout_width="12dp"
+        android:layout_height="12dp"
+        app:srcCompat="@drawable/circle"
+        app:layout_constraintStart_toEndOf="@id/fragment5"
+        app:layout_constraintEnd_toStartOf="@id/fragment6"
+        app:layout_constraintTop_toBottomOf="@id/fragment6"
+        app:layout_constraintBottom_toTopOf="@id/fragment9"/>
+
+    <include
+        android:id="@+id/fragment1"
+        layout="@layout/layout_hidden"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_margin="16dp"
         app:layout_constraintBottom_toTopOf="@+id/fragment4"
         app:layout_constraintEnd_toStartOf="@+id/fragment2"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:layout="@layout/fragment_question" />
+        app:layout_constraintTop_toTopOf="parent" />
 
-    <fragment
+    <include
         android:id="@+id/fragment2"
-        android:name="com.android.example.projectsmile.QuestionFragment"
+        layout="@layout/layout_hidden"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_margin="16dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="4dp"
         app:layout_constraintBottom_toTopOf="@+id/fragment5"
         app:layout_constraintEnd_toStartOf="@+id/fragment3"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/fragment"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:layout="@layout/fragment_question" />
+        app:layout_constraintStart_toEndOf="@+id/fragment1"
+        app:layout_constraintTop_toTopOf="parent" />
 
-    <fragment
+    <include
         android:id="@+id/fragment3"
-        android:name="com.android.example.projectsmile.QuestionFragment"
+        layout="@layout/layout_hidden"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_margin="16dp"
         app:layout_constraintBottom_toTopOf="@+id/fragment6"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/fragment2"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:layout="@layout/fragment_question" />
+        app:layout_constraintTop_toTopOf="parent" />
 
-    <fragment
+    <include
         android:id="@+id/fragment4"
-        android:name="com.android.example.projectsmile.QuestionFragment"
+        layout="@layout/layout_hidden"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_margin="16dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
         app:layout_constraintBottom_toTopOf="@+id/fragment7"
         app:layout_constraintEnd_toStartOf="@+id/fragment5"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/fragment"
-        tools:layout="@layout/fragment_question" />
+        app:layout_constraintTop_toBottomOf="@+id/fragment1" />
 
-    <fragment
+    <include
         android:id="@+id/fragment5"
-        android:name="com.android.example.projectsmile.QuestionFragment"
+        layout="@layout/layout_hidden"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_margin="16dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginEnd="4dp"
         app:layout_constraintBottom_toTopOf="@+id/fragment8"
         app:layout_constraintEnd_toStartOf="@+id/fragment6"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/fragment4"
-        app:layout_constraintTop_toBottomOf="@+id/fragment2"
-        tools:layout="@layout/fragment_question" />
+        app:layout_constraintTop_toBottomOf="@+id/fragment2"/>
 
-    <fragment
+    <include
         android:id="@+id/fragment6"
-        android:name="com.android.example.projectsmile.QuestionFragment"
+        layout="@layout/layout_hidden"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_margin="16dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
         app:layout_constraintBottom_toTopOf="@+id/fragment9"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/fragment5"
-        app:layout_constraintTop_toBottomOf="@+id/fragment3"
-        tools:layout="@layout/fragment_question" />
+        app:layout_constraintTop_toBottomOf="@+id/fragment3" />
 
-    <fragment
+    <include
         android:id="@+id/fragment7"
-        android:name="com.android.example.projectsmile.QuestionFragment"
+        layout="@layout/layout_hidden"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_margin="16dp"
+        android:layout_marginBottom="80dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/fragment8"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/fragment4"
-        tools:layout="@layout/fragment_question" />
+        app:layout_constraintTop_toBottomOf="@+id/fragment4" />
 
-    <fragment
+    <include
         android:id="@+id/fragment8"
-        android:name="com.android.example.projectsmile.QuestionFragment"
+        layout="@layout/layout_hidden"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_margin="16dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="80dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/fragment9"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/fragment7"
-        app:layout_constraintTop_toBottomOf="@+id/fragment5"
-        tools:layout="@layout/fragment_question" />
+        app:layout_constraintTop_toBottomOf="@+id/fragment5"/>
 
-    <fragment
+    <include
         android:id="@+id/fragment9"
-        android:name="com.android.example.projectsmile.QuestionFragment"
+        layout="@layout/layout_hidden"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_margin="16dp"
+        android:layout_marginBottom="80dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/fragment8"
-        app:layout_constraintTop_toBottomOf="@+id/fragment6"
-        tools:layout="@layout/fragment_question" />
+        app:layout_constraintTop_toBottomOf="@+id/fragment6" />
+
+    <Button
+        android:id="@+id/rules_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/rules"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fragment8" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

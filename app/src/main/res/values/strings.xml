@@ -10,9 +10,32 @@
     <string name="msg_4">• Answer the question so that the tile would reveal what is hidden.</string>
     <string name="msg_5">• Go on revealing each tile and complete the quest.</string>
     <string name="msg_6">• There\'s something for you once you complete this quest.</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
     <string name="tap_to_solve">Tap to solve</string>
     <string name="hidden">Hidden</string>
     <string name="rules">Rules</string>
+    <string name="submit">Submit</string>
+    <string name="cancel">Cancel</string>
+    <string name="answer">Answer</string>
+
+    <string name="ques_1"> Let\'s start with an easy question, what is the remainder you get after dividing 606 by 7?</string>
+    <string name="ans_1">4</string>
+    <string name="ques_2">What is the thing that you love to do irrespective of your mood to express yourself or sometimes just to feel delighted?</string>
+    <string name="ans_2">dance</string>
+    <string name="ques_3">We are awesome friends, we both know that. But do you remember when was our friendship started?\n\n( Format: dd-mm-yyyy )</string>
+    <string name="ans_3">ans3</string>
+    <string name="ques_4">What is the word that you think comes to my mind when I hear  somewhere?</string>
+    <string name="ans_4">ans4</string>
+    <string name="ques_5">Consider the roll number and registration number of both of us, what is common among them?\n\n( Take last two digits of the number )</string>
+    <string name="ans_5">ans5</string>
+    <string name="ques_6">Find the missing number 9 : 45 11 : 66 13 : ?</string>
+    <string name="ans_6">ans6</string>
+    <string name="ques_7">What is the slang you use the most to call me instead of my name?</string>
+    <string name="ans_7">ans7</string>
+    <string name="ques_8">Tell me, when was the last time we saw each other physically?\n\n( Format: dd-mm-yyyy )</string>
+    <string name="ans_8">ans8</string>
+    <string name="ques_9">What will be the output of the following code:\n\nchar a=\'H\' ,c=\'p\' ,f=\'d\';\nchar b=97 ,d=121 ,e=66;\nString s = \"\";\nString s1 = \"\" + a + b + c + c + d;\nString s2 = \"\" + e + f + b + d;\nSystem.out.println(s1+\" \"+s2+\" \"+s);</string>
+    <string name="ans_9">Happy Bday </string>
+    <string name="gift">Gift</string>
 </resources>

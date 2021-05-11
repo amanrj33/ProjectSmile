@@ -13,6 +13,7 @@ class FirstActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         val binding = ActivityFirstBinding.inflate(layoutInflater)
+        setContentView(binding.root)
         binding.button.setOnClickListener {
             val name = binding.nameET.text.toString()
 
@@ -29,7 +30,6 @@ class FirstActivity : AppCompatActivity() {
             }
             else Toast.makeText(this, "Incorrect name!", Toast.LENGTH_SHORT).show()
         }
-        setContentView(binding.root)
 
     }
 
